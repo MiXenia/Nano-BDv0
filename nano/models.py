@@ -16,14 +16,21 @@ class DCv2User(models.Model):
     birthday = models.IntegerField(null=True,blank=True, validators=[MinValueValidator(1), MaxValueValidator(31)])
     silver_bullets = models.IntegerField(default=0,validators=[MinValueValidator(0),MaxValueValidator(7)])
     @property
-    def has_location(mew):
-        return mew.latitude is not None and mew.longitude is not None
+    def location(mew) -> tuple[float, float] | None:
+        if mew.latitude is None or mew.longitude is None:
+            return None
+        else:
+            return (float(mew.latitude),float(mew.longitude))
     @property
     def has_timezone(mew):
         return mew.timezone is not None
     @property
-    def has_birthday(mew):
-        return mew.birthmonth is not None and mew.birthday is not None
+    def fullbirthday(mew) -> tuple[int, int] | None:
+        if mew.birthmonth is None or mew.birthday is None:
+            return None
+        else:
+            return (mew.birthmonth,mew.birthday)
+        
     
     class Meta:
         constraints = [
