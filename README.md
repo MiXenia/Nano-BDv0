@@ -12,8 +12,6 @@ A daughter that is also a Discord Bot, Website, and Database
 <img alt="Discord.py Badge" src="https://img.shields.io/badge/discord-.py-306998?logo=discord&logoColor=fff&logoSize=auto&labelColor=5865F2">
 <img alt="Django Badge" src="https://img.shields.io/badge/django-092E20?logo=django&logoColor=fff&logoSize=auto">
 <img alt="MySql Badge" src="https://img.shields.io/badge/my-sql-F29111?logo=mysql&logoColor=fff&logoSize=auto&labelColor=00758F">
-<br>
-<img alt="License Badge" src="https://img.shields.io/github/license/MiXenia/Nano-BDv0">
 </p>
 
 ## Current Features
